@@ -23,7 +23,7 @@ fn get_array_entry(ref dict: Felt252Dict<Nullable<Array<u8>>>, index: felt252) -
 #[executable]
 fn main() {
     // 3.0 ARRAYS
-    println!("3.0 COMMON COLLETIONS");
+    println!("3.0 - COMMON COLLETIONS");
 
     // An array is a collection of elements of the same type. 
     // You can create and use array methods by using `ArrayTrait` trait from the core library.

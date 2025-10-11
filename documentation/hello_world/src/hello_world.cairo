@@ -1,5 +1,5 @@
 
 #[executable]
 fn main() {
-    println!("Hello, World!");
+    println!("1.0 - Hello, World!");
 }

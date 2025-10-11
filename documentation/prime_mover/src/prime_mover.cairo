@@ -40,6 +40,8 @@ fn is_prime(n: u128) -> bool {
 // Executable entry point
 #[executable]
 fn main(input: u128) -> bool {
+    println!("2.0 - COMMON PROGRAMMING CONCEPTS");
+    
     if input > 1000000 { // Arbitrary limit for demo purposes
         panic!("Input too large, must be <= 1,000,000");
         println!("Input too large now. You self check am.");
