@@ -2,20 +2,7 @@
 
 pub mod garden;
 
-pub mod front_of_house {
-   pub mod hosting {
-        pub fn add_to_waitlist() {}
-        pub fn seat_at_table() {}
-    }
-
-    // pub mod serving {
-    //     fn take_order() {}
-    //     fn serve_order() {}
-    //     fn take_payment() {}
-    // }
-}
-
-use crate::backyard::front_of_house::hosting;
+//use crate::backyard::front_of_house::hosting;
 use core::num::traits::BitSize;
 use core::array::ArrayTrait as Arr;
 
@@ -58,9 +45,18 @@ mod shapes {
 // We can import the structures `Square`, `Circle`, and `Triangle` from this:
 use shapes::{Circle, Square, Triangle};
 
+use core::num::traits::*;
+
+// The use statement brings all public items defined in `core::num::traits` into the current scope. DO NOT USE EVERYTIME!!!
+// The glob operator is mostly used during tests to bring everything under test into the `tests` module.
+
+pub mod front_of_house;
+use crate::backyard::front_of_house::hosting
+
 
 
 #[executable]
+//#![allow(unused)]
 fn main() {
     // 7.0 - Managing Cairo Projects with Packages, Crates and Modules
     println!("7.0 - MANAGING CAIRO PROJECTS WITH PACKAGES, CRATES AND MODULES");
@@ -99,15 +95,15 @@ fn main() {
     arr.append(1);
 
     // Now, we can directly use `Square`, `Circle`, and `Triangle`
-    let sq = Square { side: 5 };
-    println!("The value of the shape is: {}", sq);
-    let cr = Circle { radius: 3 };
-    println!("The value of the shape is: {}", cr);
-    let tr = Triangle { base: 5, height: 2 };
-    println!("The value of the shape is: {}", tr);
+    let _sq = Square { side: 5 };
+    let _cr = Circle { radius: 3 };
+    let _tr = Triangle { base: 5, height: 2 };
+
+    // If we want to bring all public items defined in a path into scope, we can specify that path followed by the `*` glob operator:
 
     // // 7.5 - Separating Modules into Different Files
     println!("7.5 - Separating Modules into Different Files");
+
 
 
 
