@@ -51,7 +51,7 @@ use core::num::traits::*;
 // The glob operator is mostly used during tests to bring everything under test into the `tests` module.
 
 pub mod front_of_house;
-use crate::backyard::front_of_house::hosting
+use crate::backyard::front_of_house::hosting;
 
 
 
@@ -103,8 +103,6 @@ fn main() {
 
     // // 7.5 - Separating Modules into Different Files
     println!("7.5 - Separating Modules into Different Files");
-
-
 
 
 }
