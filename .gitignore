@@ -419,3 +419,12 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Ignore target folders in all subdirectories
+**/target/
+
+# Ignore snfoundry cache, trace and coverage, and profile in all subdirectories
+**/.snfoundry_cache/
+**/snfoundry_trace/
+**/coverage/
+**/profile/
