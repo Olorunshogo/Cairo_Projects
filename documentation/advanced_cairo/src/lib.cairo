@@ -1,6 +1,4 @@
 
-mod main;
-
 /// Interface representing `HelloContract`.
 /// This interface allows modification and retrieval of the contract balance.
 #[starknet::interface]
@@ -33,6 +31,12 @@ mod HelloStarknet {
         }
     }
 }
+
+mod advanced_cai;
+
+
+
+
 
 
 

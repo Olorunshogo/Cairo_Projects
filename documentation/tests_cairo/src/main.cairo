@@ -1,10 +1,11 @@
 
 
 
-pub fn main() -> felt252 {
+#[executable]
+pub fn main() {
     
     println!("Basic Cairo Code");
-    return 42;
+    // return 42;
 
     // 11.0 - Functional Language Features: Iterators and Closures
 
@@ -21,9 +22,5 @@ pub fn main() -> felt252 {
         x + y + z.into()
     };
     println!("Result: {}", sum(1, 2, 3));
-
-
-
-
 
 }
